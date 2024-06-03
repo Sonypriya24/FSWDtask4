@@ -1,0 +1,125 @@
+/* TodoList.css */
+
+.todo-container {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #e0f7fa; /* Light blue background */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    color: #00796b; /* Darker teal color */
+    margin-bottom: 10px;
+}
+
+.date-input {
+    padding: 10px;
+    border: 1px solid #00796b;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    outline: none;
+}
+
+.date-input:focus {
+    border-color: #004d40;
+}
+
+.date {
+    color: #00796b;
+    font-size: 1.1em;
+    margin-bottom: 20px;
+}
+
+.input-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.input-container input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #00796b; /* Border matching the header color */
+    border-radius: 5px 0 0 5px;
+    font-size: 16px;
+    outline: none;
+}
+
+.input-container input:focus {
+    border-color: #004d40; /* Darker focus border */
+}
+
+.input-container button {
+    padding: 10px 20px;
+    border: none;
+    background: #00796b; /* Button color matching the header */
+    color: white;
+    font-size: 16px;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+.input-container button:hover {
+    background: #004d40; /* Darker hover color */
+}
+
+.task-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.task-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+    border-bottom: 1px solid #ccc;
+    transition: background 0.3s;
+}
+
+.task-item.completed span {
+    text-decoration: line-through;
+    color: #999;
+}
+
+.task-item:hover {
+    background: #b2ebf2; /* Light blue hover effect */
+}
+
+.task-item span {
+    flex: 1;
+    cursor: pointer;
+}
+
+.mark-button, .delete-button {
+    margin-left: 10px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.mark-button {
+    background: #4caf50; /* Green mark button */
+    color: white;
+}
+
+.mark-button:hover {
+    background: #388e3c; /* Darker hover color for mark button */
+}
+
+.delete-button {
+    background: #ff5252; /* Red delete button */
+    color: white;
+}
+
+.delete-button:hover {
+    background: #d32f2f; /* Darker hover color for delete button */
+}
